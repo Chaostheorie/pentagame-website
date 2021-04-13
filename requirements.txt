@@ -9,7 +9,7 @@ MarkupSafe==1.1.1
 mdx-linkify==2.0
 packaging==20.4
 pelican==4.0.1
-Pygments==2.6.1
+Pygments==2.7.4
 pyparsing==2.4.7
 python-dateutil==2.8.1
 pytz==2020.1
