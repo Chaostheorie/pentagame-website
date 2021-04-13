@@ -48,7 +48,7 @@ jobs:
           make publish
           
       - name: ssh + rsync deploy
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: easingthemes/ssh-deploy@v2.1.6
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-PzL --delete"
