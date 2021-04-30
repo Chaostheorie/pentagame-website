@@ -1,6 +1,5 @@
 # Deploy for pentagame.cobalt.rocks with rsync+ssh of a custom image
 name: CD
-image: registry.gitlab.cobalt.rocks/cobalt/docker-builder/zola-builder:latest
 
 # Controls when the action will run.
 on:
@@ -13,10 +12,10 @@ on:
 
 jobs:
     build:
+        container: registry.gitlab.cobalt.rocks/cobalt/docker-builder/zola-builder:latest
         steps:
             # Checks-out repository
             - uses: actions/checkout@v2
-
             - name: Cache theme & output
               uses: actions/cache@v2
               with:
