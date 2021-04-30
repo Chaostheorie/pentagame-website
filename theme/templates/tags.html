@@ -1,9 +1,0 @@
-{% from "macros.jinja" import render_tag -%}
-{% extends "base.html" -%}
-{% block content -%}
-  <div class="pagination">
-    {% for tag, articles in tags %}
-      {{ render_tag(tag, type="pagination", articles=articles) }}
-    {% endfor -%}
-  </div>
-{% endblock content -%}

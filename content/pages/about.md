@@ -1,11 +1,15 @@
-Title: About
-Date: 2020-1-21 10:20
-Modified: 2020-1-21 10:20
-Category: General
-Tags: general
-Slug: about
-Authors: Cobalt
-Summary: About section for pentagame.org
++++
+title = "About"
+date = 2020-01-21
+slu = "about"
+
+description = "About section for pentagame.cobalt.rocks"
+summary = "About section for pentagame.cobalt.rocks"
+
+[extra]
+subtitle = "- Learn more about Pentagame"
+time = false
++++
 
 Pentagame is an abstract strategy game without chance element. It is played on a pentagram star that shows 100 round stops. The 5 corners and the 5 crossings in the pentagram are colored (white, blue, red, green, yellow). It can be played with 2, 3 or 4 players. It looks a bit like a pentagonal ludo, but it is truly different. For example, there is no chance and pieces don't get beaten. Instead, it is all about moving, swapping, about paths and about areas.
 
@@ -23,7 +27,7 @@ The game becomes very complex very soon. Nevertheless, a two player game takes o
 
   <p class="text-center">
     <a class="btn btn-outline-dark" href="https://github.com/penta-jan/Illustrated-Rules">
-      <i class="fas fa-image"></i>
+      <i class="bi bi-images"></i>
       Illustrated Rules
     </a>
   </p>

@@ -1,0 +1,23 @@
+{
+    "name": "pentagame-website-assets",
+    "author": "Cobalt",
+    "version": "0.0.1",
+    "description": "Assets for pentagame.cobalt.rocks",
+    "license": "AGPL-3.0",
+    "scripts": {
+        "build": "if [ ! -d './static/fonts/' ]; then cp -r ./node_modules/bootstrap-icons/font/fonts/ ./static/fonts/; fi && webpack --config webpack.prod.config.js && zola build",
+        "dev": "if [ ! -d './static/fonts/' ]; then cp -r ./node_modules/bootstrap-icons/font/fonts/ ./static/fonts/; fi && webpack --config webpack.config.js && zola serve"
+    },
+    "devDependencies": {
+        "@types/bootstrap": "^5.0.4",
+        "bootstrap": "^5.0.0-beta3",
+        "ts-loader": "^8.0.14",
+        "typescript": "^4.1.3",
+        "webpack": "^5.16",
+        "webpack-cli": "^4.4",
+        "webpack-merge": "^5.4.0"
+    },
+    "dependencies": {
+        "bootstrap-icons": "^1.4.1"
+    }
+}

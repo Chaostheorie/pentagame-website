@@ -1,0 +1,83 @@
+/*
+Main.scss Frontend stylesheet for actix-forms
+@license GPL 2 @ Cobalt <https://cobalt.rocks>
+*/
+
+/*
+ Importing everything here is acceptable as PurgeCSS will remove anything unused
+ This is preferred instead of manually tracking down every used component
+ */
+
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons'; // this allows non-traditional include with css (see https://stackoverflow.com/questions/7111610/import-regular-css-file-in-scss-file/36166487#36166487)
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '_layout.scss';
+@import '_interactive.scss';
+
+$bs-font-path: '/fonts/' !default;
+
+.bi,
+.bi::before,
+.bi::after {
+    font-family: 'bootstrap-icons' !important;
+    font-style: normal;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.1em;
+}
+
+.bi-heading::after,
+.bi-heading::before {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#content {
+    min-height: 100vh;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+}
+
+body,
+.bg-main {
+    font-display: optional;
+    background: #fff;
+}
+
+.bg-purple {
+    background-color: #603f8b;
+}
+
+.title,
+h1 {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100%;
+        margin: 0.1rem auto;
+        width: 50%;
+        height: 0.1rem;
+        background: $dark;
+    }
+}
+
+.title-white {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100%;
+        margin: 0.1rem auto;
+        width: 50%;
+        height: 0.1rem;
+        background: $light;
+    }
+}

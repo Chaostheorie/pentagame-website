@@ -1,11 +1,14 @@
-Title: Rules for Pentagame
-Date: 2020-1-21 10:20
-Modified: 2020-1-21 10:20
-Category: General
-Tags: general, rules
-Slug: rules
-Authors: Cobalt
-Summary: Rules section for pentagame.org
++++
+title = "Rules for Pentagame"
+date = 2020-04-29
+slug = "rules"
+
+description = "Rules for penagame in multiple variants and languages"
+summary = "Rules for penagame in multiple variants and languages"
+
+[extra]
+time = false
++++
 
 <a href="https://pentagame.org/pdf/Illustrated_Rules.pdf" class="dark-link">Rules in English</a> and <a href="http://pentagame.org/pdf/Illustrated_Rules__German_.pdf" class="dark-link">rules in german</a>
 

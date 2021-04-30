@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for entry in entries -%}
+{% if entry.extra.list is defined and entry.extra.list != true -%}{% else -%}
+    <url>
+        <loc>{{ entry.permalink|safe }}</loc>
+        {% if entry.updated -%}<lastmod>{{ entry.updated }}</lastmod>{% endif -%}
+        <priority>{% if entry.extra.priority -%}{{ entry.extra.priority }}{% else -%}0.3{% endif -%} </priority>  
+    </url>
+{% endif -%}
+  {% endfor -%}
+</urlset>
