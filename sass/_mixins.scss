@@ -1,0 +1,40 @@
+/*
+mixins.scss Frontend stylesheet for pentagame.cobalt.rocks
+@license GPL 2 @ Cobalt <https://cobalt.rocks>
+*/
+
+@mixin rotate($deg: 90, $time: 1) {
+    $sDeg: #{$deg}deg;
+    $stime: #{$time}s;
+
+    -webkit-transform: rotate($sDeg);
+    -moz-transform: rotate($sDeg);
+    -ms-transform: rotate($sDeg);
+    -o-transform: rotate($sDeg);
+
+    transform-origin: center center;
+    -moz-transition: rotate $stime ease;
+    -webkit-transition: rotate $stime ease;
+    -o-transition: rotate $stime ease;
+    transition: rotate $stime ease;
+
+    transform: rotate($sDeg);
+}
+
+@mixin rotateX($deg: 90, $time: 1) {
+    $sDeg: #{$deg}deg;
+    $stime: #{$time}s;
+
+    -webkit-transform: rotateX($sDeg);
+    -moz-transform: rotateX($sDeg);
+    -ms-transform: rotateX($sDeg);
+    -o-transform: rotateX($sDeg);
+
+    transform-origin: center center;
+    -moz-transition: rotateX $stime ease;
+    -webkit-transition: rotateX $stime ease;
+    -o-transition: rotateX $stime ease;
+    transition: rotateX $stime ease;
+
+    transform: rotateX($sDeg);
+}

@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block content %}
+<div
+    class="container w-80 mt-3 mx-auto"
+    itemscope
+    itemtype="https://schema.org/SearchResultsPage"
+>
+    <section class="dark-grey-text">
+        <div class="text-center">
+            <div>
+                <h1 class="h1 text-dark" id="title" itemtype="headline">
+                    404 - Page not found
+                </h1>
+                <div class="container" itemprop="mainContentOfPage">
+                    It seems like you tried to reach a page that wasn't published yet. We're sorry for any inconvenience caused by this error. Don't hesitate to <a href=https://github.com/Penta-Game/pentagame-website/issues">open an issue</a>, when something is missing.
+                </div>
+                <div class="btn-group mt-2">
+                    <a
+                        class="btn btn-lg btn-dark"
+                        itemprop="significantLink"
+                        id="contact"
+                        href="{{ get_url(path='@/pages/contact.md') }}"
+                    >
+                        <i class="bi bi-envelope"></i> Contact
+                    </a>
+                    <a
+                        class="btn btn-lg btn-dark"
+                        itemprop="significantLink"
+                        id="projects"
+                        href="/"
+                    >
+                        <i class="bi bi-house"></i> Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+/*
+interactive.scss Frontend stylesheet for pentagame.cobalt.rocks
+@license GPL 2 @ Cobalt <https://cobalt.rocks>
+*/
+@import '_mixins.scss';
+
+button[data-bs-toggle='collapse'].rotatable {
+    i.bi:before,
+    svg {
+        @include rotateX(180, 1);
+
+        display: inline-block;
+    }
+
+    &.collapsed {
+        i.bi:before,
+        svg {
+            @include rotateX(0, 1);
+        }
+    }
+}
+
+// adjustements for form-creator sidebar
+.card-body {
+    padding-top: 0 !important;
+}
+
+.card-header > p {
+    height: 100%;
+    margin-bottom: 0 !important;
+}

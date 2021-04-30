@@ -1,0 +1,52 @@
+{% extends "base.html" %} {% block content %}
+<div
+    class="container w-100 mt-3 mx-auto"
+    itemscope
+    itemtype="https://schema.org/SearchResultsPage"
+>
+    <section class="dark-grey-text">
+        <h1 class="h1 text-dark text-center" id="title" itemtype="headline">
+            {{ page.title|safe }} {% if page.extra.subtitle is defined %} <span class='visually-hidden'>{{ page.extra.subtitle }} </span> {% endif -%}
+        </h1>
+        <p class="dark-grey-text align-middle bg-beige text-dark">
+            
+
+            {% if config.extra.rtime %} 
+            {% if page.extra.rtime is defined and page.extra.rtime != true %} 
+            {% else %} 
+            <span class="text-bold">
+                Reading Time: {{ page.reading_time }} min
+            </span>
+            <span class="px-1">/</span>
+            {% endif %}
+            {% endif %}
+
+            {% if page.date %}
+            <span class="text-bold">
+                Published: {{ page.day }}/{{ page.month }}/{{ page.year}}
+            </span>
+            <span class="px-1">/</span>
+            {% endif %} {% if page.draft %}
+
+            <span class="text-bold"> Draft </span>
+            <span class="px-1">/</span>
+            {% endif %}
+
+            {% if config.extra.link %} 
+            {% if page.extra.link is defined and page.extra.link != true %} 
+            {% else %} 
+            <button
+                class="btn btn-sm btn-outline-dark"
+                onclick="window.CopyToClipBoard('{{ page.permalink|safe }}');"
+            >
+                Copy Link <i class="bi bi-link-45deg"></i>
+            </button>
+            {% endif %}
+            {% endif %}
+        </p>
+        <div class="container-fluid" itemprop="mainContentOfPage">
+            {{ page.content|safe }}
+        </div>
+    </section>
+</div>
+{% endblock %}

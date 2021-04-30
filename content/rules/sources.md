@@ -1,11 +1,14 @@
-Title: Rule Sources
-Date: 2020-1-21 10:20
-Modified: 2020-1-21 10:20
-Category: rules
-Tags: genral, rules, download
-Slug: sources
-Authors: Cobalt, Jan Suchanek
-Summary: Sources to get your own copy of the penta game rules
++++
+title = "Sources for Pentagame rules"
+date = 2020-04-29
+slug = "sources"
+
+description = "Sources to get your own copy of the Pentagame rules"
+summary = "Sources to get your own copy of the Pentagame rules"
+
+[extra]
+time = false
++++
 
 The penta game rules are supplied with every physical copy of penta game.
 
@@ -19,6 +22,6 @@ This page contains sources for a digital version. If you have any questions abou
 
 [Github](https://github.com/penta-game):
 
-- [Pentagame Rulesheets (Tex) international](https://github.com/penta-jan/Pentagame-Rulesheets)
-- [Pentagame Rulesheets (Tex) international 2.0](https://github.com/penta-jan/Pentagame-Rulesheets-2.0)
-- [Illustrated Rules](https://github.com/penta-jan/Illustrated-Rules)
+-   [Pentagame Rulesheets (Tex) international](https://github.com/penta-jan/Pentagame-Rulesheets)
+-   [Pentagame Rulesheets (Tex) international 2.0](https://github.com/penta-jan/Pentagame-Rulesheets-2.0)
+-   [Illustrated Rules](https://github.com/penta-jan/Illustrated-Rules)
