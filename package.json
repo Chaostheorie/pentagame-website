@@ -7,7 +7,9 @@
     "scripts": {
         "fonts": "if [ ! -d './static/fonts/' ]; then cp -r ./node_modules/bootstrap-icons/font/fonts/ ./static/fonts/; fi",
         "build": "yarn fonts && webpack --config webpack.prod.config.js && zola build && yarn purge",
+        "npm-build": "npm run fonts && webpack --config webpack.prod.config.js && zola build && npm run purge",
         "dev": "yarn fonts && webpack --config webpack.config.js && zola serve",
+        "npm-dev": "npm run fonts && webpack --config webpack.config.js && zola serve",
         "purge": "purgecss --font-face --keyframes --config purgecss.config.js --output public/main.css"
     },
     "devDependencies": {

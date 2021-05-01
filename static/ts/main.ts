@@ -23,14 +23,19 @@ function init_ui() {
 
     // nav toggle
     let btn = document.getElementById('menu-toggle'),
-        wrapper = document.getElementById('wrapper');
-
-    wrapper.classList.add('margin-transition');
+        transition = false;
 
     btn.addEventListener('click', (evt) => {
         evt.preventDefault();
+        if (!transition) {
+            document
+                .getElementById('sidebar-wrapper')
+                .classList.add('margin-transition');
+        } else {
+            transition = true;
+        }
         btn.classList.toggle('toggled');
-        wrapper.classList.toggle('sidebar-toggled');
+        document.getElementById('wrapper').classList.toggle('sidebar-toggled');
     });
 
     console.info('[MAIN]: Finished Initializing general UI Elements 🐱');

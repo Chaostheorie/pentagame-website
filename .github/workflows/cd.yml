@@ -32,7 +32,7 @@ jobs:
 
             # Build page
             - name: Build page
-              run: npm run build
+              run: npm run npm-build
 
             - name: ssh + rsync deploy
               uses: easingthemes/ssh-deploy@v2.1.6
