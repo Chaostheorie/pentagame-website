@@ -179,7 +179,7 @@
             <!-- /#sidebar-wrapper -->
 
             <!-- Page Content -->
-            <div id="page-content-wrapper" class="w-100 p-2">
+            <div id="page-content-wrapper" class="w-100">
                 <nav
                     class="navbar navbar-expand-lg sticky-top navbar-dark"
                     id="page-content-nav"
@@ -187,18 +187,30 @@
                     <button
                         class="btn btn-dark m-2"
                         id="menu-toggle"
+                        type="button"
                         aria-label="Sidebar Toggle"
                     >
-                        <i class="bi bi-caret-left"></i>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-caret-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"
+                            />
+                        </svg>
                     </button>
                 </nav>
 
-                <div class="container-fluid py-2 mb-5" id="content-container">
+                <div class="container-fluid py-2 mb-5" id="content">
                     {% block content %} {% endblock content %}
                 </div>
             </div>
-            <!-- /#page-content-wrapper -->
         </div>
+        <!-- #Page Content -->
 
         <!-- Footer -->
         <footer id="footer" class="page-footer font-small text-white w-100">

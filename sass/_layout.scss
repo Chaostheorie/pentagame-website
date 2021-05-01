@@ -1,6 +1,6 @@
 /*
 layout.scss Frontend stylesheet for pentagame.cobalt.rocks
-@license GPL 2 @ Cobalt <https://cobalt.rocks>
+@license AGPL 3 @ Cobalt <https://cobalt.rocks>
 */
 @import '_mixins.scss';
 @import '../node_modules/bootstrap/scss/_variables.scss';
@@ -183,12 +183,15 @@ $breakpoint-lg: 992px;
 }
 
 #sidebar-wrapper {
+    min-height: 100vh;
+    border-right: 0.1rem solid white;
+}
+
+.margin-transition {
     -webkit-transition: margin 0.25s ease-out;
     -moz-transition: margin 0.25s ease-out;
     -o-transition: margin 0.25s ease-out;
     transition: margin 0.25s ease-out;
-    min-height: 100vh;
-    border-right: 0.1rem solid white;
 }
 
 .sidebar-toggled {

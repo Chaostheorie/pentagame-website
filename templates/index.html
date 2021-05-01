@@ -1,38 +1,39 @@
 {% extends "base.html" %} {% block content %}
 
-<div class="row my-5">
-    <div class="col-md-6">
-        <h1>Welcome to Pentagame</h1>
-        <p>
-            Pentagame is an abstract strategy game without chance element. It is
-            played on a pentagram star that shows 100 round stops. The 5 corners
-            and the 5 crossings in the pentagram are colored (white, blue, red,
-            green, yellow). It can be played with 2, 3 or 4 players. It looks a
-            bit like a pentagonal ludo, but it is truly different. For example,
-            there is no chance and pieces don't get beaten. Instead, it is all
-            about moving, swapping, about paths and about areas. Every player
-            plays 5 pieces of one shape, e.g. cats against dogs or whatever …
-        </p>
-        <div class="text-center">
-            <div class="btn-group justify-pages-center btn-group-lg">
-                <a
-                    href="{{ get_url(path='@/pages/rules.md')|safe }}"
-                    class="btn btn-lg btn-dark"
-                >
-                    <i class="bi bi-eyeglasses"></i>
-                    Read more
-                </a>
+<div class="container mt-3 mx-auto">
+    <div class="row g-2 my-5">
+        <div class="col-md-6">
+            <h1>Welcome to Pentagame</h1>
+            <p>
+                Pentagame is an abstract strategy game without chance element.
+                It is played on a pentagram star that shows 100 round stops. The
+                5 corners and the 5 crossings in the pentagram are colored
+                (white, blue, red, green, yellow). It can be played with 2, 3 or
+                4 players. It looks a bit like a pentagonal ludo, but it is
+                truly different. For example, there is no chance and pieces
+                don't get beaten. Instead, it is all about moving, swapping,
+                about paths and about areas. Every player plays 5 pieces of one
+                shape, e.g. cats against dogs or whatever …
+            </p>
+            <div class="text-center">
+                <div class="btn-group justify-pages-center btn-group-lg">
+                    <a
+                        href="{{ get_url(path='@/pages/rules.md')|safe }}"
+                        class="btn btn-lg btn-dark"
+                    >
+                        <i class="bi bi-eyeglasses"></i>
+                        Read more <span class="visually-hidden"> about rules</span>
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="col-md-6 d-none d-md-block">
+            <img src="/images/brand.svg" class="w-100 h-100" />
+        </div>
     </div>
-    <div class="col-md-6 d-none d-md-block">
-        <img src="/images/brand.svg" class="w-100 h-100" />
-    </div>
-</div>
 
-<div class="container-fluid mt-4">
     <div class="row justify-pages-between text-center text-white">
-        <div class="col-md-5 flex-fill p-3 m-1 bg-success shadow rounded">
+        <div class="col-md-5 flex-fill p-3 m-1 bg-gray shadow rounded">
             <h2><i class="bi bi-journal-richtext"></i> Rules</h2>
 
             <p>
@@ -54,12 +55,12 @@
                     href="{{ get_url(path='@/pages/rules.md')|safe }}"
                 >
                     <i class="bi bi-journal-text"></i>
-                    Rules
+                    Rules <span class="visually-hidden"> and more</span>
                 </a>
             </div>
         </div>
 
-        <div class="col-md-5 flex-fill m-1 p-3 bg-danger shadow rounded">
+        <div class="col-md-5 flex-fill m-1 p-3 bg-green shadow rounded">
             <h2><i class="bi bi-journal-album"></i> Book</h2>
 
             <p>

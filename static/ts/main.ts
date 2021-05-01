@@ -22,12 +22,15 @@ function init_ui() {
     });
 
     // nav toggle
-    let btn = document.getElementById('menu-toggle');
+    let btn = document.getElementById('menu-toggle'),
+        wrapper = document.getElementById('wrapper');
+
+    wrapper.classList.add('margin-transition');
 
     btn.addEventListener('click', (evt) => {
         evt.preventDefault();
         btn.classList.toggle('toggled');
-        document.getElementById('wrapper').classList.toggle('sidebar-toggled');
+        wrapper.classList.toggle('sidebar-toggled');
     });
 
     console.info('[MAIN]: Finished Initializing general UI Elements 🐱');
