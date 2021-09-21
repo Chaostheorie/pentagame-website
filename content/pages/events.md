@@ -26,7 +26,7 @@ Einfache Regeln erzeugen immer wieder andere und spannende Spielverläufe. Obwoh
 -   Type: talk
 -   [Learn more](https://rc3.world/rc3/public_fahrplan)
 
-## Berlin Brettspeil Con 2021
+## Berlin Brettspiel CON 2021
 
 Wir werden auf der Berlin Brettspiel CON 2021 vom 15.07. bis zum 17.07. in der STATION Berlin mit unserem eigenen Stand sein. Dort wird es die Möglichkeit geben Penta kennenzulernen und sich mit anderen an Penagame Interessierten auszutauschen. Wir werden dort auch eine weiter entwickelte Version des Pentagam-Buches als Leseprobe bei uns zur Verfügung haben. Wir freuen uns auf euren Besuch!
 
