@@ -1,6 +1,6 @@
 +++
 title = "Events"
-date = 2020-04-29
+date = 2021-09-21
 slug = "events"
 
 description = "Events section for pentagame.cobalt.rocks"

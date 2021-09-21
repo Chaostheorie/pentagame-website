@@ -26,7 +26,15 @@
                 Published: {{ page.day }}/{{ page.month }}/{{ page.year}}
             </span>
             <span class="px-1">/</span>
-            {% endif %} {% if page.draft %}
+            {% endif %}
+            {% if page.updated %}
+            <span class="text-bold">
+                Updated: {{ page.updated }}
+            </span>
+            <span class="px-1">/</span>
+            {% endif %}
+            
+            {% if page.draft %}
 
             <span class="text-bold"> Draft </span>
             <span class="px-1">/</span>
