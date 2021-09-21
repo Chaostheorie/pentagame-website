@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /images
+Disallow: /fonts
+Disallow: /js
+Disallow: /ts
 Sitemap: {{ get_url(path="sitemap.xml") }}
